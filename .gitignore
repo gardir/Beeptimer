@@ -1,0 +1,8 @@
+# Executable
+Beeptimer
+
+# din-ding non-source
+din-ding*
+
+# objects
+*.o
