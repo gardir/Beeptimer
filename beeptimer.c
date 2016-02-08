@@ -1,6 +1,6 @@
 #include "beeptimer.h"
 
-int argument_parser(int argc, char *argv[], char *options)
+int argument_parser(int argc, char *argv[], Uint8 *options)
 {
 	int i;
 	int seconds = 0;
@@ -29,9 +29,6 @@ int argument_parser(int argc, char *argv[], char *options)
 			}
 			else if (option == 'h') { // manual hours
 				seconds += value * 3600;
-			}
-			else if (option == 'r') { // enables restart
-				(*options) |= 1; // restart bit 1
 			}
 		}
 		else { // the semi-optional seconds argument
@@ -209,7 +206,7 @@ int main(int argc, char *argv[])
 			SDL_Delay(100);
 		}
 
-	} while (restart && prompt_continue());
+	} while (prompt_continue());
 		
 	SDL_CloseAudio();
 	// Clean

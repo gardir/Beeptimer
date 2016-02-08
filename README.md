@@ -6,6 +6,12 @@ Thanks to open source sounds!
 ## Requirements
 Need [https://www.libsdl.org/](SDL library) to make.
 
+## Installation
+Run make
+´´´
+$ make
+```
+
 ## Usage
 ```
 Usage: $ ./Beeptimer [options] (seconds)

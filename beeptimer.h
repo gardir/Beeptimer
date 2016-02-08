@@ -7,6 +7,7 @@
 
 // Constants
 static const int usage_len = 120;
+static const Uint8 restart = 1;
 
 // Embedded
 extern unsigned char din_ding_wav;
@@ -20,7 +21,7 @@ static Uint32 wav_len;
 static Uint8 *wav_pos;
 
 // Functions
-int argument_parser(int argc, char *argv[]);
+int argument_parser(int argc, char *argv[], Uint8 *options);
 void display_timer(int seconds);
 int init_device();
 void play_beep(void *udata, Uint8 *stream, int len);
