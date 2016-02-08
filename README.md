@@ -8,11 +8,13 @@ Need [https://www.libsdl.org/](SDL library) to make.
 
 ## Installation
 Run make
-´´´
+
+```
 $ make
 ```
 
 ## Usage
+
 ```
 Usage: $ ./Beeptimer [options] (seconds)
 The seconds will turn into seconds if provided, but is not in itself necessary as long as any option provided has included numeric.
